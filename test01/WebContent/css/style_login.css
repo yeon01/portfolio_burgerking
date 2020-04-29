@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* 공통 */
+@font-face{
+   font-family: hannapro;
+   src: url(../font/BMHANNAPro.ttf);
+}
+@font-face{
+   font-family: cookie;
+   src: url(../font/CookieRun\ Bold.ttf);
+}
+@font-face{
+   font-family: nanumsquare;
+   src: url(../font/NanumSquareRoundL.ttf);
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {font-family: hannapro; text-decoration: none; color: #333;}
+body {width: 100%; height: 100%; font-family: nanumsquare, sans-serif; font-size: 18px;}
+p {font-family: nanumsquare;}
+h2 {font-size: 2rem;}
+h1,h2,h3,h4 {font-family: cookie, sans-serif;}
+
+
+/* clearfix */
+.clearfix::after {content:""; display: table; clear: both;}
+
+/* header */
+#header {position: fixed; top: 0; left: 0; z-index: 1; width: 100%; height: 100px; background: rgba(137, 81, 58, 0.5);}
+.logo {float: left; width: auto; height: auto; margin-left: 353px; padding-top: 5px; box-sizing: border-box;}
+.logo img {margin-top: 6px; width: 80px; height: auto;}
+.navbar {float: left; font-size: 1.1rem; width: 30%; height: 100%;}
+.navbar ul {margin-left: 175px; width: 100%; height: 100%;}
+.navbar ul li {float: left; line-height: 100px; width: 25%; height: 100%;}
+.navbar a { color: #fff;}
+.login_button {float: right; margin-top: 15px; margin-right: 350px; width: auto; height: 65%;}
+.login_button img {width: auto; height: 100%;}
+
+
+/* 섹션1 */
+.bxSlider {width: 100%; height: auto;}
+.bx-wrapper {border: none; background: transparent; width: 100%; height: auto}
+.bx-viewport {width: 100%; height: 100%;}
+.mainImg {width: 100%; height: 100px;}
+.mainImg a {width: 100%; height: auto;}
+.mainImg a img {width: 100%; height: auto;}
+
+
+ /* 캐러셀 - 좌우버튼 */
+ .bxSlider .btn {position: absolute; top: 50%; margin-top: -23px;}
+ .bxSlider .pBtn {left: 40px;}
+ .bxSlider .nBtn {right: 40px;}
+ .bxSlider .btn img {width: 45px;}
+
+ /* 캐러셀 - 페이저 */
+ .bxSlider .pager {position: absolute; width: 100%; left: 0; bottom: 55px; text-align: center;}
+ .bxSlider .pager li {display: inline-block; width: 10px; height: 10px; border-radius: 5px; margin: 0 5px; cursor: pointer; background: #004899; transition: 0.3s;}
+ .bxSlider .pager .active {width: 30px; background: #e22219;}
+
+
+/* 섹션2 - 인기메뉴 */
+.menu .col {text-align: center;}
+.menu .col div {height: 295px; border: 1px solid #ccc; margin: 10px 5px;}
+.menu h3 { margin: 0; padding: 10px; width: 50%; background: #89513a; color: #fff; font-size:1.3em;}
+.menu img {width: auto; height: 50%; margin-top: 50px;}
+
+/* 섹션3 - 사이드메뉴 */
+.side {text-align: center; margin-bottom: 50px;}
+.side .col {padding: 10px; margin-top: 50px; margin-bottom: 50px;}
+.side .col img {width: 60%;}
+.side p {margin-top: 10px; height: 100px; line-height: 150px;}
+.side button {margin-top: 30px; cursor: pointer; background: #F9B000; width: 100%; padding: 20px; font-size: 1.3em; color: #89513a;}
+.side button:hover {background: #89513a; color: #fff;}
+
+/* 섹션4 - 브랜드스토리 */
+#s4 {width: 100%; height: 1400px;}
+.story_title {margin: auto; width: 90%;}
+.story_title>li  {float: left; cursor: pointer; background: #89513a; color: #fff; text-align: center; font-size: 1.6rem; height: 80px; line-height: 80px; font-family: hannapro;}
+.story_title>li:nth-of-type(1) {background: #F9B000; color: #673102;}
+
+.story_contents {margin: auto; width: 90%; height: 1220px;}
+
+/* 브랜드 스토리 - 프레임 그릴드 */
+.flame_grilled>ul {margin-top: 150px;}
+.flame_grilled li {float: left;}
+.flame {padding-left: 80px; box-sizing: border-box;}
+.flame img {margin-top: 70px; margin-left: 100px;}
+.flame p {font-family: hannapro; font-size: 1.2rem; line-height: 40px; margin-top: 40px; margin-left: 78px;}
+.grilled img {margin-right: 80px; width: 500px;}
+.grilled_bi {margin-top: 100px;}
+.grilled_bi img {margin-left: 72px; width: 100%;}
+.grilled_tt {margin-left: 72px; margin-top: -490px; width: 90%; height: 436px;}
+.grilled_tt img {float: left; margin-left: 130px; margin-top: 45px;}
+.grilled_tt p {float: right; margin-right: 100px; line-height: 30px; margin-top: 150px; color: #fff; font-family: nanumsquare; font-size: 1.2rem; font-weight: 500;}
+
+/* 브랜드 스토리 - 신선한 재료 */
+.frash {display: none; margin: auto; width: 90%; height: 2000px;}
+.frash li {float: left; margin-top: 100px; margin-bottom: 100px;}
+.frash ul div {margin-left: 122px; margin-bottom: 50px; width: 100%; height: 290px;}
+.frash ul img {width: 50%; height: auto;}
+.frash p {font-weight: 700; line-height: 1.8rem; width: auto; margin-left: 100px;}
+.frash strong {line-height: 2.5rem; font-family: hannapro; font-size: 2.5rem; color: #89513a;}
+.beef img {margin-top: 50px;}
+.veget img {margin-top: 30px;}
+.frash>div {width: 100%; height: auto;}
+.frash>div>img {width: auto; height: auto;}
+
+/* 브랜드 스토리 - trust in taste */
+.trust {display: none; margin: auto; margin-top: 220px; width: 90%;}
+.trust>p {margin-left: 90px; font-family: cookie; font-size: 2.2rem; line-height: 3rem; font-weight: 100; color: #673102;}
+.trust li {float: left; margin: 50px 0 70px; width: 50%; height: 351px;}
+.trust li>img {margin-left: 90px;}
+.trust dl {margin-left: 90px;}
+.trust dt {font-size: 1.6rem; font-family: cookie; margin-top: 20px; margin-bottom: 30px;} 
+.trust dd {font-size: 1.1rem; font-weight: 600; font-family: nanumsquare; line-height: 1.8rem;} 
+
+/* 브랜드 스토리 - 환경/사회공헌 */
+.campaign {display: none; margin: auto; width: 90%; margin-top: 220px;}
+.campaign img {margin-left: 360px;}
+.campaign P {margin-top: 70px; text-align: center; line-height: 1.7rem; font-size: 1.2rem; font-weight: 600;}
+.campaign strong {font-size: 1.3rem; line-height: 3rem; border-bottom: #673102 2px solid; color: #673102; background: #F9B000;}
+
+/* 섹션5 - 푸터 */
+.footer {background: #89513a; color: #fff; text-align: center; padding: 50px; font-size: 0.8em;}
+
+/* 레이아웃 */
+.container {padding: 0 41px 0 42px;}
+.container h2 {border-bottom: 1px solid #ccc; margin: 50px 5px 20px 5px; padding: 20px 0;}
+.col {float: left;}
+.col-20 {width: 2%;}
+.col-33 {width: 33.33%;}
+.col-30 {width: 30%;}
+.col-40 {width: 40%;}
+.col-25 {width: 25%;}
+.col-50 {width: 50%;}
+.col-60 {width: 60%;}
+.col-70 {width: 70%;}

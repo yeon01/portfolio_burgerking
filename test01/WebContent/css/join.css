@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* 폰트 */
+@font-face{
+   font-family: hannapro;
+   src: url(../font/BMHANNAPro.ttf);
+}
+@font-face{
+   font-family: cookie;
+   src: url(../font/CookieRun\ Bold.ttf);
+}
+@font-face{
+   font-family: nanumsquare;
+   src: url(../font/NanumSquareRoundL.ttf);
+}
+
+/* join.jsp */
+body {padding: 80px 0; font-family: nanumsquare; background-color: #673102;}
+* {margin: 0; padding: 0;}
+a {text-decoration: none; color: #000;}
+li {list-style: none;}
+.join {margin: auto; border-radius: 30px; width: 30%; height: 1000px; background-color: #f9b000;}
+header {margin: auto; width: 80%; height: auto;}
+form {margin: auto; padding-top: 30px; width: 80%; height: auto;}
+
+/* header */
+h1 {padding-top: 20px; margin: auto; width: 80%; height: 100px;}
+h1>a {width: 100%; height: 100%;}
+h1 img {float: left; display: inline-block; width: 80px; height: 80px;}
+h1 span {float: left; margin-left: 10px; text-align: center; font-family: hannapro; font-size: 32px; line-height: 80px; width: 200px; height: 80px;}
+
+/* form */
+h2 {margin: auto; font-family: cookie; font-size: 28px;}
+form>ul {padding-top: 10px; width: 100%;}
+form li {margin-bottom: 15px; width: 100%; height: 80px;}
+form p {font-weight: bold; line-height: 30px; height: 30px;}
+input {border: 1px solid #673102; width: 80%; height: 40px;}
+input[type="button"] {margin-left: 5px; color: #fff; font-weight: bold; border-radius: 5px; border: 1px solid  #673102; background-color: #e22219; width: 15%; height: 30px;}
+input[name="userBth"] {width: 35%; height: 40px;}
+select[id="userBthM"] {border: 1px solid #673102; height: 40px;}
+.gender {font-weight: 600; font-size: 14px; width: 100%; height: 40px;}
+input[type="radio"] {margin-top: 7px; width: 25px; height: 25px;} 
+input[id="genderW"] {margin-left: 20px;}
+
+.join_submit {position: relative; float: left; width: 50%; height: 68px; z-index: 100;}
+.join_submit span {position: absolute; top: 50%; left: 50%; margin-top: -12px; margin-left: -20px; font-size: 1.4rem; z-index: 100; font-family: hannapro; color: #fff;}
+.join_submit img {position: absolute; top: 0; left: 0;}
+.join_submit input {display: none;}
+.join_label {width: 100%; height: 100%; cursor: pointer;}
+.dlt_btn {position: relative; float: right; width: 50%; height: 68px; z-index: 100;}
+.dlt_btn span {position: absolute; top: 50%; right: 50%; margin-top: -12px; margin-right: -16px; font-size: 1.4rem; z-index: 100; font-family: hannapro; color: #fff;}
+.dlt_btn img {position: absolute; top: 0; left: 0;}
+.dlt_btn input {display: none;}
+.delete {width: 100%; height: 100%; cursor: pointer;}
+
+
+
